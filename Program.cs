@@ -13,16 +13,26 @@ namespace Contraband
             ContrabandCar CB = new ContrabandCar();
             Car Car = new Car();
 
-            Console.WriteLine("Hur många bilar ska skapas?");
 
-            Car.ParseInt();
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("Hur många bilar ska skapas?");
 
-            Console.ReadKey();
+                Car.ParseInt();
 
-            Console.WriteLine("Vilken bil vill du titta på?");
+                Console.ReadKey();
+
+                Console.WriteLine("Vilken bil vill du titta på?");
+
+                Car.Cars();
+                Car.Amount();
+                Car.Carselector();
+
+                Console.ReadKey();
+            }
 
 
-            Car.Carselector();
 
 
 
